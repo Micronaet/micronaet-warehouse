@@ -299,7 +299,7 @@
             <field name="name">stock.move.slot.tree</field>
             <field name="model">stock.move.slot</field>
             <field name="arch" type="xml">
-                <tree string="Movimentazione magazzino" colors="red:product_slot_id==False" editable="bottom">
+                <tree string="Movimentazione magazzino" colors="red:product_slot_id==False;green:state=='done'" editable="bottom">
                     <field name="sequence" readonly="1"/>
                     <field name="picking_id" invisible="1"/>
                     <field name="move_id" invisible="1"/>
